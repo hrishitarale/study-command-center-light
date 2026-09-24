@@ -13,12 +13,12 @@ export const EXAMS = [
   {
     key:'RRB_MAINS', name:'IBPS CRP RRBs XV — Officer Scale-I Mains', shortName:'RRB Mains', stage:'Mains',
     date:'2026-12-20', window:'20 Dec 2026', marks:200, duration:'120 min',
-    description:'Reasoning, Computer Knowledge, General Awareness, English/Hindi and Quantitative Aptitude.',
+    description:'Reasoning, Computer Knowledge, General Awareness, English or Hindi Language, and Quantitative Aptitude. Candidates can opt for either English or Hindi.',
     subjects:[
       {name:'Reasoning',marks:50,questions:40,duration:'30 min',topics:['Advanced Puzzles','Seating','Data Sufficiency','Input-Output','Logical Reasoning']},
       {name:'Computer Knowledge',marks:20,questions:40,duration:'15 min',topics:['Hardware/Software','MS Office','Internet','Networking','DBMS/OS basics','Banking computer terms']},
       {name:'General Awareness',marks:40,questions:40,duration:'15 min',topics:['Current Affairs','Banking/Financial Awareness','RBI','Government Schemes','Economy','Static GK']},
-      {name:'English/Hindi',marks:40,questions:40,duration:'30 min',topics:['Reading Comprehension','Cloze Test','Error Spotting','Rearrangement','Fill in the Blanks','Vocabulary/Grammar']},
+      {name:'English Language / Hindi Language',marks:40,questions:40,duration:'30 min',topics:['Choose either English or Hindi','Reading Comprehension','Cloze Test','Error Spotting','Rearrangement','Fill in the Blanks','Vocabulary/Grammar']},
       {name:'Quantitative Aptitude',marks:50,questions:40,duration:'30 min',topics:['Advanced Arithmetic','Data Interpretation','Approximation','Quadratic','Number Series','Mixed Quant']}
     ],
     officialUrl:'https://www.ibps.in/index.php/rural-bank-xv/',
@@ -69,16 +69,18 @@ export const SYLLABUS = {
    ['Mains — Quantitative Aptitude',['Advanced Arithmetic','Data Interpretation','Approximation','Quadratic','Number Series','Mixed Quant']]
   ],
   SSC:[
-   ['Engineering Mathematics',['Propositional & First-Order Logic','Sets, Relations, Functions','Partial Orders & Lattices','Monoids & Groups','Graphs, Matching, Colouring','Combinatorics, Recurrence, Generating Functions','Matrices & Determinants','Systems of Linear Equations','Eigenvalues/Eigenvectors','LU Decomposition','Limits, Continuity, Differentiability','Maxima/Minima','Integration','Random Variables','Distributions','Mean/Median/Mode/SD','Conditional Probability & Bayes']],
-   ['Digital Logic',['Boolean Algebra','Combinational & Sequential Circuits','Minimization','Number Representation','Fixed/Floating Point Arithmetic']],
-   ['Computer Organization & Architecture',['Machine Instructions','Addressing Modes','ALU','Datapath & Control Unit','Instruction Pipelining','Pipeline Hazards','Cache/Main/Secondary Storage','I/O Interface','Interrupts & DMA']],
-   ['Programming & Data Structures',['C Programming','Recursion','Arrays','Stacks','Queues','Linked Lists','Trees','BST','Binary Heaps','Graphs']],
-   ['Algorithms',['Searching','Sorting','Hashing','Asymptotic Time/Space Complexity','Greedy','Dynamic Programming','Divide & Conquer','Graph Traversals','Minimum Spanning Trees','Shortest Paths']],
-   ['Theory of Computation',['Regular Expressions','Finite Automata','CFG & PDA','Regular Languages','Context-Free Languages','Pumping Lemma','Turing Machines','Undecidability']],
-   ['Compiler Design',['Lexical Analysis','Parsing','Syntax-Directed Translation','Runtime Environments','Intermediate Code Generation','Local Optimization','Data Flow Analysis']],
-   ['Operating Systems',['System Calls','Processes','Threads','IPC','Concurrency & Synchronization','Deadlock','CPU/I/O Scheduling','Memory Management','Virtual Memory','File Systems']],
-   ['Databases',['ER Model','Relational Model','Relational Algebra','Tuple Calculus','SQL','Integrity Constraints','Normal Forms','File Organization','B/B+ Trees','Transactions','Concurrency Control']],
-   ['Computer Networks',['OSI & TCP/IP','Packet/Circuit/Virtual Switching','Framing & Error Detection','MAC & Ethernet','Routing','IPv4 & CIDR','ARP/DHCP/ICMP','NAT','TCP/UDP','Sockets','DNS/SMTP/HTTP/FTP/Email']]
+   ['Paper-I — General Intelligence & Reasoning',['Analogies','Similarities & Differences','Space Visualization','Problem-Solving','Analysis','Judgment & Decision-Making','Visual Memory','Discrimination & Observation','Relationship Concepts','Arithmetical Reasoning','Verbal Classification','Figure Classification','Arithmetical Number Series','Abstract Ideas & Symbols','Arithmetical Computations','Other Analytical Functions']],
+   ['Paper-I — General Awareness',['Environment & Its Application to Society','Current Events','Everyday Scientific Observation','India & Neighbouring Countries','History','Culture','Geography','Economic Scene','General Polity','Scientific Research']],
+   ['Part-D — Engineering Mathematics',['Propositional & First-Order Logic','Sets, Relations, Functions','Partial Orders & Lattices','Monoids & Groups','Graphs: Connectivity, Matching & Colouring','Combinatorics: Counting, Recurrence & Generating Functions','Matrices & Determinants','Systems of Linear Equations','Eigenvalues & Eigenvectors','LU Decomposition','Limits, Continuity & Differentiability','Maxima & Minima','Mean Value Theorem','Integration','Random Variables','Uniform, Normal, Exponential, Poisson & Binomial Distributions','Mean, Median, Mode & Standard Deviation','Conditional Probability & Bayes Theorem']],
+   ['Part-D — Digital Logic',['Boolean Algebra','Combinational & Sequential Circuits','Minimization','Number Representations','Computer Arithmetic: Fixed & Floating Point']],
+   ['Part-D — Computer Organization & Architecture',['Machine Instructions','Addressing Modes','ALU','Data Path & Control Unit','Instruction Pipelining','Pipeline Hazards','Memory Hierarchy: Cache, Main Memory & Secondary Storage','I/O Interface','Interrupt Mode','DMA Mode']],
+   ['Part-D — Programming & Data Structures',['Programming in C','Recursion','Arrays','Stacks','Queues','Linked Lists','Trees','Binary Search Trees','Binary Heaps','Graphs']],
+   ['Part-D — Algorithms',['Searching','Sorting','Hashing','Asymptotic Worst-Case Time & Space Complexity','Greedy Algorithms','Dynamic Programming','Divide & Conquer','Graph Traversals','Minimum Spanning Trees','Shortest Paths']],
+   ['Part-D — Theory of Computation',['Regular Expressions & Finite Automata','Context-Free Grammars & Push-Down Automata','Regular Languages','Context-Free Languages','Pumping Lemma','Turing Machines','Undecidability']],
+   ['Part-D — Compiler Design',['Lexical Analysis','Parsing','Syntax-Directed Translation','Runtime Environments','Intermediate Code Generation','Local Optimization','Data Flow Analysis: Constant Propagation, Liveness & Common Subexpression Elimination']],
+   ['Part-D — Operating System',['System Calls','Processes','Threads','Inter-Process Communication','Concurrency & Synchronization','Deadlock','CPU Scheduling','I/O Scheduling','Memory Management','Virtual Memory','File Systems']],
+   ['Part-D — Databases',['ER Model','Relational Model','Relational Algebra','Tuple Calculus','SQL','Integrity Constraints','Normal Forms','File Organization','Indexing: B & B+ Trees','Transactions','Concurrency Control']],
+   ['Part-D — Computer Networks',['OSI & TCP/IP Protocol Stacks','Packet, Circuit & Virtual Circuit Switching','Data Link Layer: Framing & Error Detection','Medium Access Control & Ethernet Bridging','Routing: Shortest Path, Flooding, Distance Vector & Link State','Fragmentation & IP Addressing','IPv4 & CIDR Notation','ARP, DHCP & ICMP','Network Address Translation (NAT)','Transport Layer: Flow & Congestion Control','UDP & TCP','Sockets','DNS, SMTP, HTTP, FTP & Email']]
   ]
 };
 
