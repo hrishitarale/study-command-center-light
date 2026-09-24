@@ -1,0 +1,8 @@
+{
+  "name":"study-command-center",
+  "private":true,
+  "version":"2.0.0",
+  "workspaces":["client"],
+  "scripts":{"dev":"npm --workspace client run dev","build":"npm --workspace client run build","preview":"npm --workspace client run preview"},
+  "engines":{"node":">=20"}
+}
